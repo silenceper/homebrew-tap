@@ -11,7 +11,7 @@ class Gowatch < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/silenceper/gowatch/releases/download/v1.5.6/gowatch_Darwin_x86_64.tar.gz"
-      sha256 "d959eb7a6df3b2f48fab5eebbc75c099f1767786aa1e81b5ca89cdf4493f8762"
+      sha256 "78e6778b4eb3006f74d17f931abe12728f76e6f015e2edc9aedc9d83e38c24d3"
 
       def install
         bin.install "gowatch"
@@ -19,7 +19,7 @@ class Gowatch < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/silenceper/gowatch/releases/download/v1.5.6/gowatch_Darwin_arm64.tar.gz"
-      sha256 "1fab2cb585a98f464b7e501a0d8acf6ee7d8addd91dfc52cfad8ddee3aedc7f7"
+      sha256 "978869acf25f64107bad02e5b61094afe637117f33bc66fe8ecb2537be543344"
 
       def install
         bin.install "gowatch"
@@ -30,14 +30,14 @@ class Gowatch < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/silenceper/gowatch/releases/download/v1.5.6/gowatch_Linux_x86_64.tar.gz"
-      sha256 "091cf5e644cb7106a8a8678bbb24637d821d6f4cb5d876610af14378e9bc8090"
+      sha256 "a7dbfee13a214b619df0954d79d0b1c756bf5d9121e7c563b7cace2951e9b1f2"
       def install
         bin.install "gowatch"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/silenceper/gowatch/releases/download/v1.5.6/gowatch_Linux_arm64.tar.gz"
-      sha256 "24962356c1efd9f2f7a6aef55e2392a0959ac454a94c179d396f56f210dfc1a6"
+      sha256 "f460a6a705b24ca7757d024ebab9219775e8e7a2811e70370f1f4f1b6910bd75"
       def install
         bin.install "gowatch"
       end
