@@ -5,21 +5,21 @@
 class Aikit < Formula
   desc "Manage AI dev assets. Sync once, align everyone."
   homepage "https://github.com/silenceper/aikit"
-  version "0.0.1-alpha.5"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/silenceper/aikit/releases/download/v0.0.1-alpha.5/aikit_0.0.1-alpha.5_darwin_amd64.tar.gz"
-      sha256 "c7f88a581b54f08b9c657fa93b76df185e87f8cc8344975b08afb51ab4a34284"
+      url "https://github.com/silenceper/aikit/releases/download/v0.1.1/aikit_0.1.1_darwin_amd64.tar.gz"
+      sha256 "f57081802bd6d5bb718cd6873c4220f9f56d554227bc129c2c593bbc26bf4bb0"
 
       define_method(:install) do
         bin.install "aikit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/silenceper/aikit/releases/download/v0.0.1-alpha.5/aikit_0.0.1-alpha.5_darwin_arm64.tar.gz"
-      sha256 "8eb92ec89912fff910584cacf8ef187b4de22482d405a85208f27b0d0f56cccf"
+      url "https://github.com/silenceper/aikit/releases/download/v0.1.1/aikit_0.1.1_darwin_arm64.tar.gz"
+      sha256 "fd15695316f7706137a087f82d07cc22b5bdf71e5750baf3dec8e3ca9fb9b75a"
 
       define_method(:install) do
         bin.install "aikit"
@@ -29,15 +29,15 @@ class Aikit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/silenceper/aikit/releases/download/v0.0.1-alpha.5/aikit_0.0.1-alpha.5_linux_amd64.tar.gz"
-      sha256 "fa6fc8f91de14c76e1a50d7908a0487c2a2298c16e4e7ba25c42ac59a059579e"
+      url "https://github.com/silenceper/aikit/releases/download/v0.1.1/aikit_0.1.1_linux_amd64.tar.gz"
+      sha256 "c25374037e68f9c9796633d2ca4e0b673aacd90093817fbd81d43d9d1288b809"
       define_method(:install) do
         bin.install "aikit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/silenceper/aikit/releases/download/v0.0.1-alpha.5/aikit_0.0.1-alpha.5_linux_arm64.tar.gz"
-      sha256 "2fc8dd1f79daaf4729e65198616f163e240463ce000e150905eca94c475a998b"
+      url "https://github.com/silenceper/aikit/releases/download/v0.1.1/aikit_0.1.1_linux_arm64.tar.gz"
+      sha256 "e0c0a8b1c2fdba5b1c2132076ccc1986a05622f235b98725a47296b3d19d2bc2"
       define_method(:install) do
         bin.install "aikit"
       end
